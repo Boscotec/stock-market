@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  flex: 1;
+  display: flex;
+  width: 1024px;
+  height: 100%;
+  margin-top: 5%;
+  margin-left: 5%;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -35,4 +41,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-field {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+}
+
+.input {
+  height: 36px;
+  width: 100%;
+  border-radius: 4px;
+  border-color: gray;
+  border-width: 1px;
+  margin-bottom: 36px;
 }
