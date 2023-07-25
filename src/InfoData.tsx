@@ -6,8 +6,8 @@ interface Prop {
 
 const InfoData = ({ quote = {} }: Prop) => (
   <div className="container">
-    <div className="h4">{quote.symbol?.[0]}</div>
-    <div className="h4">{quote.ask?.[0]}</div>
+    <div className="h4">{quote?.symbol?.[0]}</div>
+    <div className="h4">{quote?.ask?.[0]}</div>
     {quote.change ? (
       <div className="row">
         <div className={`h5`}>

@@ -50,12 +50,12 @@ const options = {
   },
 };
 
-const StockChart = ({ graphData }: Prop) => {
+const StockChart = ({ graphData = [] }: Prop) => {
   const data = {
-    labels: graphData[0],
+    labels: graphData?.length ? graphData[0] : [],
     datasets: [
       {
-        data: graphData[1],
+        data: graphData?.length ? graphData[1] : [],
         backgroundColor: "black",
         borderColor: "#5AC53B",
         borderWidth: 2,
